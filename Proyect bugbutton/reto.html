@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medic Pad App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .app-container {
+            width: 100%;
+            max-width: 400px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+            overflow: hidden;
+            text-align: center;
+        }
+        .app-header {
+            background-color: #e6faff;
+            color: #00b2cc;
+            padding: 20px;
+        }
+        .app-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .app-logo-part {
+            width: 50px;
+            height: 50px;
+        }
+        .blue { background-color: #007bff; }
+        .green { background-color: #28a745; }
+        .doctors-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .doctor {
+            width: 80px;
+            height: 160px;
+            background-size: cover;
+        }
+        .doctor.male {
+            background-image: url('doctor-male.png'); /* Imagen de ejemplo para el doctor masculino */
+        }
+        .doctor.female {
+            background-image: url('doctor-female.png'); /* Imagen de ejemplo para la doctora femenina */
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="app-header">
+            <h1>MEDIC PAD</h1>
+        </div>
+        <div class="app-logo">
+            <div class="app-logo-part blue"></div>
+            <div class="app-logo-part green"></div>
+        </div>
+        <div class="doctors-container">
+            <div class="doctor male"></div>
+            <div class="doctor female"></div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript para futuras funcionalidades
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Aplicación cargada');
+        });
+    </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medic Pad App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .app-container {
+            width: 100%;
+            max-width: 400px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+            overflow: hidden;
+            text-align: center;
+        }
+        .app-header {
+            background-color: #e6faff;
+            color: #00b2cc;
+            padding: 20px;
+        }
+        .app-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .app-logo-part {
+            width: 50px;
+            height: 50px;
+        }
+        .blue { background-color: #007bff; }
+        .green { background-color: #28a745; }
+        .doctors-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .doctor {
+            width: 80px;
+            height: 160px;
+            background-size: cover;
+        }
+        .doctor.male {
+            background-image: url('doctor-male.png'); /* Imagen de ejemplo para el doctor masculino */
+        }
+        .doctor.female {
+            background-image: url('doctor-female.png'); /* Imagen de ejemplo para la doctora femenina */
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="app-header">
+            <h1>MEDIC PAD</h1>
+        </div>
+        <div class="app-logo">
+            <div class="app-logo-part blue"></div>
+            <div class="app-logo-part green"></div>
+        </div>
+        <div class="doctors-container">
+            <div class="doctor male"></div>
+            <div class="doctor female"></div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript para futuras funcionalidades
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Aplicación cargada');
+        });
+    </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Médica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .app-container {
+            width: 100%;
+            max-width: 400px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .menu-option {
+            margin: 15px 0;
+            padding: 10px;
+            background-color: #e6faff;
+            border: 1px solid #00b2cc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .menu-option:hover {
+            background-color: #d4f1ff;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .nav-buttons button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .nav-buttons button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+        </div>
+        <div class="menu-option" onclick="showPatientData()">Datos del paciente</div>
+        <div class="menu-option" onclick="showEvaluation()">Evaluación</div>
+        <div class="menu-option" onclick="showDiagnosis()">Diagnóstico</div>
+        <div class="nav-buttons">
+            <button onclick="goBack()">Regresar</button>
+            <button onclick="goToMenu()">Menú</button>
+            <button onclick="cancel()">Cancelar</button>
+        </div>
+    </div>
+
+    <script>
+        function showPatientData() {
+            alert('Mostrando datos del paciente...');
+        }
+
+        function showEvaluation() {
+            alert('Mostrando evaluación...');
+        }
+
+        function showDiagnosis() {
+            alert('Mostrando diagnóstico...');
+        }
+
+        function goBack() {
+            alert('Regresando...');
+        }
+
+        function goToMenu() {
+            alert('Yendo al menú...');
+        }
+
+        function cancel() {
+            alert('Cancelando...');
+        }
+    </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Médica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .app-container {
+            width: 100%;
+            max-width: 400px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .menu-option {
+            margin: 15px 0;
+            padding: 10px;
+            background-color: #e6faff;
+            border: 1px solid #00b2cc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .menu-option:hover {
+            background-color: #d4f1ff;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .nav-buttons button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .nav-buttons button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+        </div>
+        <div class="menu-option" onclick="showPatientData()">Datos del paciente</div>
+        <div class="menu-option" onclick="showEvaluation()">Evaluación</div>
+        <div class="menu-option" onclick="showDiagnosis()">Diagnóstico</div>
+        <div class="nav-buttons">
+            <button onclick="goBack()">Regresar</button>
+            <button onclick="goToMenu()">Menú</button>
+            <button onclick="cancel()">Cancelar</button>
+        </div>
+    </div>
+
+    <script>
+        function showPatientData() {
+            alert('Mostrando datos del paciente...');
+        }
+
+        function showEvaluation() {
+            alert('Mostrando evaluación...');
+        }
+
+        function showDiagnosis() {
+            alert('Mostrando diagnóstico...');
+        }
+
+        function goBack() {
+            alert('Regresando...');
+        }
+
+        function goToMenu() {
+            alert('Yendo al menú...');
+        }
+
+        function cancel() {
+            alert('Cancelando...');
+        }
+    </script>
+</body>
+</html>
